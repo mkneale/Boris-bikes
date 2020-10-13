@@ -4,8 +4,9 @@ RSpec.describe DockingStation do
 describe '#DockingStation' do
   it "releases bike" do
 
+    docking_station = DockingStation.new
     expected_value = release_bike
-    expect(DockingStation).to eq expected_value
+    expect(docking_station).to eq expected_value
   end
 end
 end
