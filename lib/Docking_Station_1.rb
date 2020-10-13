@@ -1,11 +1,13 @@
-class DockingStation
+require 'Bike'
+
+class DockingStation < Bike
 
   def initialise
-    @bike = bike
+
   end
 
   def release_bike
-    return @bike
+    return bike = Bike.new
   end
 
 end
