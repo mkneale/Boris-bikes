@@ -8,4 +8,10 @@ require "Docking_Station_1"
       bike = subject.release_bike
       expect(bike).to be_working
     end
-  end
+
+    it { is_expected.to respond_to(:dock).with(1).argument }
+    end
+
+    it 'raises error if there are no bikes in dock' do
+      expect{ raise bikeError }.to raise_error 
+    end
